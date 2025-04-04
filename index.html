@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Simple Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url("https://source.unsplash.com/1920x1080/?abstract") no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    section {
+      background-color: rgba(255, 255, 255, 0.95);
+      margin: 40px auto;
+      padding: 30px;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    section img {
+      width: 100%;
+      height: auto;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #0077cc;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form input[type="text"],
+    form input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    form input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.95);
+      position: relative;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Simple Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">About</a></li>
+        <li><a href="#section3">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="section1">
+    <h2>Welcome</h2>
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80" alt="Nature Image">
+    <p>This is a simple web page created with ChatGPT. It features multiple sections, images, buttons, and more.</p>
+    <button onclick="alert('Hello from ChatGPT!')">Click Me</button>
+  </section>
+
+  <section id="section2">
+    <h2>About This Page</h2>
+    <img src="https://images.unsplash.com/photo-1581092334494-99e8d36f26d4?auto=format&fit=crop&w=1000&q=80" alt="Technology Image">
+    <p>This section showcases how AI tools can be used to generate working websites with minimal input.</p>
+    <video width="320" height="240" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section id="section3">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br><br>
+      <input type="submit" value="Submit" />
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 My Simple Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+    console.log("Website is running!");
+  </script>
+</body>
+</html>
